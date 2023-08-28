@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/123?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: #your password
+
+ChatGPT:
+  connect-timeout: 60000      # HTTP请求连接超时时间
+  read-timeout: 60000         # HTTP请求读取超时时间
+  variables:                  # 自定义变量:
+    apiKey:      # 你的 OpenAI 的 API KEY
+    model: text-davinci-003
+    # ChartGPT 的模型
+    maxTokens: 200             # 最大 Token 数
+    temperature: 0.1 # 该值越大每次返回的结果越随机，即相似度越小
+
