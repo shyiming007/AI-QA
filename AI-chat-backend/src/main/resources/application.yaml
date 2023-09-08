@@ -1,15 +1,15 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/123?useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: l145327a
+    url: 
+    username: 
+    password: 
 
 ChatGPT:
   connect-timeout: 60000      # HTTP请求连接超时时间
   read-timeout: 60000         # HTTP请求读取超时时间
   variables:                  # 自定义变量:
-    apiKey: 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    # 你的 OpenAI 的 API KEY
+    apiKey: # 你的 OpenAI 的 API KEY
     model: text-davinci-003
     # ChartGPT 的模型
     maxTokens: 500             # 最大 Token 数
