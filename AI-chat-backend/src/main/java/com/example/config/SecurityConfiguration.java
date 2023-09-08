@@ -36,6 +36,7 @@ public class SecurityConfiguration {
         return http
                 .authorizeHttpRequests()
                 .requestMatchers("/chatGpt/askAi").permitAll()
+
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()

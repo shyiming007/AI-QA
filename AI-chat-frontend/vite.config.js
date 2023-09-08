@@ -8,6 +8,23 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+
+    open: true,
+    overlay: {
+      warnings: false,
+      errors: true
+    },
+    proxy: {
+      // axios请求中带有/apis的url,就会触发代理机制
+      '/apis': {
+        target: 'https://api.jisuapi.com',
+        secure: false,
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/apis/,""),
+      },
+},
+  },
   plugins: [
     vue(),
     AutoImport({
@@ -23,3 +40,4 @@ export default defineConfig({
     }
   }
 })
+
