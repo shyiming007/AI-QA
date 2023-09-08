@@ -7,5 +7,7 @@
 
 现阶段成品：
 
+登陆页面：
 ![3831694136801_ pic_hd](https://github.com/shyiming007/AI-QA/assets/115174505/0f8c3166-be52-44d6-b3e4-11cb4b572006)
+问答页面：
 ![3821694136745_ pic](https://github.com/shyiming007/AI-QA/assets/115174505/f51d07a8-d06f-4a6c-83fb-873f862fdd2b)
